@@ -15,3 +15,4 @@ class ProductPageLocators():
 	PTICE_IN_BASKET = (By.XPATH, '//*[@id="messages"]/div[3]/div/p[1]/strong')
 	NAME_BOOK = (By.CLASS_NAME, "col-sm-6.product_main")
 	PRICE_BOOK = (By.CLASS_NAME, "price_color")
+	SUCCESS_MESSAGE = (By.CLASS_NAME, "success")
