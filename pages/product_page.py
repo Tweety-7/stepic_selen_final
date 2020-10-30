@@ -31,11 +31,10 @@ class PageObject(BasePage):
 			# print("NAME3=", name_after_add.text.split("has been added")[0][2:-1])
 			assert name.split("\n")[0] == name_after_add.text.split("has been added")[0][2:-1], "name not add in basket"
 			assert price == price_in_basket.text, "price_in_basket not ok"
-		# def should_not_be_success_message(self):
-   #  		assert not
-   #  	self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
-			# "Success message is presented, but should not be"
-		# def should_be_alert(self):
+		def should_not_be_success_message(self):
+			assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "should not be succses"
+		
+		'''# def should_be_alert(self):
 		# btn = self.is_element_present(*ProductPageLocators.ADD_BASKET)
 		# btn.click() 
 			# WebDriverWait(self.browser, 3).until(EC.alert_is_present())
@@ -51,5 +50,4 @@ class PageObject(BasePage):
 
 
 	# def should_be_in_basket(self):
-	# 	assert True , "not in basket"
-	
+	# 	assert True , "not in basket"'''
