@@ -1,6 +1,4 @@
-# class LoginPageLocators(B)
-# 	def __init__(self):
-# 		pass
+
 from selenium.webdriver.common.by import By
 
 
