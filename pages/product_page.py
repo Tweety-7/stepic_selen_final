@@ -14,4 +14,4 @@ class PageObject(BasePage):
 			assert name.split("\n")[0] == name_after_add.text.split("has been added")[0][2:-1], "name not add in basket"
 			assert price == price_in_basket.text, "price_in_basket not ok"
 		def should_not_be_success_message(self):
-			assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "should not be succses"
+			assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "should not be succses msg"
